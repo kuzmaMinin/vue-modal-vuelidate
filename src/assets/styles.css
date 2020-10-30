@@ -13,17 +13,21 @@ button {
   background: #0071f0;
   color: white;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 15px;
   outline: none;
 }
 
 form {
   display: flex;
+  justify-content: center;
   box-shadow: 0 4px 16px #ccc;
   flex-direction: column;
-  justify-content: center;
   border-radius: 10px;
   align-items: center;
+}
+
+legend {
+  color: #0071f0;
 }
 
 .title {
@@ -32,9 +36,9 @@ form {
 
 .container {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 0;
   padding: 20px;
   letter-spacing: 1px;
@@ -43,8 +47,7 @@ form {
 .item {
   display: flex;
   flex-direction: column;
-  margin: 5px;
-  margin-bottom: 15px;
+  margin: 5px 5px 15px 5px;
 }
 
 .sex-span {
@@ -59,10 +62,10 @@ form {
 
 input {
   border-radius: 5px;
+  border-color: lightgray;
   padding: 3px;
   font-size: 15px;
   font-style: italic;
-  border-color: lightgray;
 }
 
 .sex {
@@ -101,11 +104,11 @@ label {
 }
 
 .select-input {
+  border: 2px solid gray;
   border-radius: 5px;
   font-style: italic;
   font-size: 15px;
   padding: 3px;
-  border: 2px solid lightgray;
 }
 
 input:focus,
@@ -116,6 +119,22 @@ input:hover {
 
 button:active {
   background: darkturquoise;
+}
+
+.allright {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 16px #ccc;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

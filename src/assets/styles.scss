@@ -1,80 +1,76 @@
 @import "variables.scss";
 
 body {
-  display: flex;
-  justify-content: center;
+  display: map-get($flex, display);
+  justify-content: map-get($flex, justify-content);
   font-family: sans-serif;
 }
 
-
-
 button {
   width: 90%;
-  padding: 10px 20px;
-  margin-bottom: 20px;
+  padding: $padding $padding*2;
+  margin-bottom: $margin*4;
   border: none;
-  border-radius: 5px;
+  border-radius: $border-radius;
   background: $true-color;
   color: white;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: $main-font-size;
   outline: none;
 }
 
 form {
-
-  display: flex;
+  display: map-get($flex, display);
+  justify-content: map-get($flex, justify-content);
   box-shadow: 0 4px 16px #ccc;
   flex-direction: column;
-  justify-content: center;
-  border-radius: 10px;
+  border-radius: $border-radius*2;
   align-items: center;
 }
 
+legend {
+  color: $true-color;
+}
+
 .title {
-  color: gray;
+  color: $secondary-color;
 }
 
 .container {
-  display: flex;
+  display: map-get($flex, display);
+  justify-content: map-get($flex, justify-content);
   flex-direction: row;
   flex-wrap: wrap;
-  //align-items: center;
-  justify-content: center;
   margin-bottom: 0;
   padding: 20px;
-
   letter-spacing: 1px;
 }
 .item {
-  display: flex;
+  display: map-get($flex, display);
   flex-direction: column;
-  margin: 5px;
-  margin-bottom: 15px;
-
+  margin: $margin $margin $margin*3 $margin;
 }
 
 .sex-span {
-  margin-bottom: 5px;
+  margin-bottom: $margin;
 }
 
 .pre {
-  font-size: 15px;
+  font-size: $main-font-size;
   vertical-align: middle;
   margin-right: 2px;
-
 }
 
 input {
-  border-radius: 5px;
-  padding: 3px;
-  font-size: 15px;
-  font-style: italic;
+  border-radius: $border-radius;
   border-color: lightgray;
+  padding: 3px;
+  font-size: $main-font-size;
+  font-style: italic;
 }
 
 .sex {
-  display: flex;
+  display: map-get($flex, display);
   flex-direction: row;
   font-style: italic;
 }
@@ -82,40 +78,38 @@ input {
 .attention {
   color: red;
   margin: 0;
-  font-size: 10px;
+  font-size: $main-font-size - 5;
 }
 
 .annotation {
-  font-size: 12px;
+  font-size: $main-font-size - 3;
 }
 
 select {
-  //appearance: none;
   overflow: hidden;
 }
 
 fieldset {
   min-width: 250px;
-  border-radius: 10px;
+  border-radius: $border-radius*2;
   border-color: $true-color;
-  padding: 20px;
-  //margin-bottom: 20px;
+  padding: $padding*2;
 }
 
 .is-invalid {
-  border-color: red;
+  border-color: $error-color;
 }
 
 label {
-  margin-bottom: 5px;
+  margin-bottom: $margin;
 }
 
 .select-input {
-  border-radius: 5px;
+  border: 2px solid $secondary-color;
+  border-radius: $border-radius;
   font-style: italic;
-  font-size: 15px;
+  font-size: $main-font-size;
   padding: 3px;
-  border: 2px solid lightgray;
 }
 
 input:focus,
@@ -124,125 +118,22 @@ input:hover {
   color: $true-color;
 }
 
-//button:hover,
 button:active {
   background: darkturquoise;
 }
 
-
-//private-information {
-//  displa
-//}
-
-
-
-
-
-
-
-
-
-//input {
-//  border-radius: 5px;
-//}
-//
-//.full-input {
-//  width: 90%;
-//}
-//
-//.inline-block {
-//  display: flex;
-//  flex-direction: row;
-//}
-//
-//.sex {
-//  border: 2px solid gray;
-//  border-radius: 5px;
-//}
-
-
-
-
-
-
-
-//
-//.input {
-//  width: 90%;
-//  //border: $true-color;
-//  padding: 10px;
-//  font-size: 15px;
-//  border-radius: 5px;
-//  text-align: center;
-//}
-//
-//.phone-input {
-//  width: 80%;
-//  //border: $true-color;
-//  padding: 10px;
-//  font-size: 15px;
-//  border-radius: 5px;
-//  text-align: center;
-//}
-//
-//span {
-//  padding-top: 12px;
-//  padding-right: 5px;
-//}
-//
-//input:focus,
-//input:hover {
-//  border-color: $true-color;
-//  color: $true-color;
-//}
-//.is-invalid {
-//  border-color: $error-color;
-//}
-//
-//.attention {
-//  margin: 0;
-//  color: $error-color;
-//}
-//
-//label {
-//  //position: absolute;
-//  top: 0;
-//  z-index: -1;
-//}
-//
-//.inline {
-//  display: flex;
-//  flex-direction: row;
-//}
-//
-
-//
-//legend {
-//  color: $true-color;
-//}
-//
-//.item {
-//  margin: 15px 5px;
-//  width: 90%;
-//
-//}
-//
-//.radio-item {
-//  border: 2px solid $secondary-color;
-//  border-radius: 5px;
-//  display: flex;
-//  flex-direction: column;
-//  width: auto;
-//}
-//
-////.inline.phone {
-////  width: 70%;
-////}
-//
-//select {
-//  width: 100%;
-//}
-
-//.item .inline {
-//  width: 50%;
-//}
+.allright {
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  left: 35%;
+  top:50%;
+  display: map-get($flex, display);
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: $padding*2;
+  box-shadow: 0 4px 16px #ccc;
+  border-radius: $border-radius*2;
+  text-align: center;
+}
