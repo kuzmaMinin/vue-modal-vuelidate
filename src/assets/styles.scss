@@ -1,0 +1,248 @@
+@import "variables.scss";
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+
+
+button {
+  width: 90%;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: $true-color;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 16px;
+  outline: none;
+}
+
+form {
+
+  display: flex;
+  box-shadow: 0 4px 16px #ccc;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.title {
+  color: gray;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  //align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 20px;
+
+  letter-spacing: 1px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-bottom: 15px;
+
+}
+
+.sex-span {
+  margin-bottom: 5px;
+}
+
+.pre {
+  font-size: 15px;
+  vertical-align: middle;
+  margin-right: 2px;
+
+}
+
+input {
+  border-radius: 5px;
+  padding: 3px;
+  font-size: 15px;
+  font-style: italic;
+  border-color: lightgray;
+}
+
+.sex {
+  display: flex;
+  flex-direction: row;
+  font-style: italic;
+}
+
+.attention {
+  color: red;
+  margin: 0;
+  font-size: 10px;
+}
+
+.annotation {
+  font-size: 12px;
+}
+
+select {
+  //appearance: none;
+  overflow: hidden;
+}
+
+fieldset {
+  min-width: 250px;
+  border-radius: 10px;
+  border-color: $true-color;
+  padding: 20px;
+  //margin-bottom: 20px;
+}
+
+.is-invalid {
+  border-color: red;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.select-input {
+  border-radius: 5px;
+  font-style: italic;
+  font-size: 15px;
+  padding: 3px;
+  border: 2px solid lightgray;
+}
+
+input:focus,
+input:hover {
+  border-color: $true-color;
+  color: $true-color;
+}
+
+//button:hover,
+button:active {
+  background: darkturquoise;
+}
+
+
+//private-information {
+//  displa
+//}
+
+
+
+
+
+
+
+
+
+//input {
+//  border-radius: 5px;
+//}
+//
+//.full-input {
+//  width: 90%;
+//}
+//
+//.inline-block {
+//  display: flex;
+//  flex-direction: row;
+//}
+//
+//.sex {
+//  border: 2px solid gray;
+//  border-radius: 5px;
+//}
+
+
+
+
+
+
+
+//
+//.input {
+//  width: 90%;
+//  //border: $true-color;
+//  padding: 10px;
+//  font-size: 15px;
+//  border-radius: 5px;
+//  text-align: center;
+//}
+//
+//.phone-input {
+//  width: 80%;
+//  //border: $true-color;
+//  padding: 10px;
+//  font-size: 15px;
+//  border-radius: 5px;
+//  text-align: center;
+//}
+//
+//span {
+//  padding-top: 12px;
+//  padding-right: 5px;
+//}
+//
+//input:focus,
+//input:hover {
+//  border-color: $true-color;
+//  color: $true-color;
+//}
+//.is-invalid {
+//  border-color: $error-color;
+//}
+//
+//.attention {
+//  margin: 0;
+//  color: $error-color;
+//}
+//
+//label {
+//  //position: absolute;
+//  top: 0;
+//  z-index: -1;
+//}
+//
+//.inline {
+//  display: flex;
+//  flex-direction: row;
+//}
+//
+
+//
+//legend {
+//  color: $true-color;
+//}
+//
+//.item {
+//  margin: 15px 5px;
+//  width: 90%;
+//
+//}
+//
+//.radio-item {
+//  border: 2px solid $secondary-color;
+//  border-radius: 5px;
+//  display: flex;
+//  flex-direction: column;
+//  width: auto;
+//}
+//
+////.inline.phone {
+////  width: 70%;
+////}
+//
+//select {
+//  width: 100%;
+//}
+
+//.item .inline {
+//  width: 50%;
+//}
